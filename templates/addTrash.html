@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Title
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Добавление треша: </h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Название"><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Текст"></textarea>
+        <input type="submit" class="btn btn-success" value="Опубликовать">
+    </form>
+</div>
+{% endblock %}

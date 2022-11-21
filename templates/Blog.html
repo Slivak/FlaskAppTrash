@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Title
+{% endblock %}
+
+{% block body %}
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Блог</h1>
+      <p class="fs-5 text-muted">Блог...</p>
+      <p class="fs-5 text-muted">Пон</p>
+</div>
+
+<div class="modal-content rounded-4 shadow">
+      <div class="modal-body p-5">
+        <h2 class="fw-bold mb-0">{{ articles[0].title }}</h2>
+
+        <ul class="d-grid gap-4 my-5 list-unstyled">
+          <li class="d-flex gap-4">
+            <svg class="bi text-muted flex-shrink-0" width="48" height="48"><use xlink:href="#grid-fill"></use></svg>
+            <div>
+              {{ articles[0].text}}
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+{% endblock %}
